@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: Coding Project By Alejandro</title>
+    <title> Keep it 100: Coding Project By Alejandro</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +17,7 @@
 <!---Nav Section-->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"> <img src="/img/Alejandro Garcia.png" class="d-inline-block align-text-top" width="30" height="24">  APP NAME</a>
+        <a class="navbar-brand" href="#"> <img src="/img/Alejandro Garcia.png" class="d-inline-block align-text-top" width="30" height="24">  Keep it 100</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,10 +51,41 @@
         <div class="row-cols-1 rows-cols-lg-2">
             <div class="col-lg-8"></div>
             <pre class="line-numbers"><code class="language-javascript">
-                //Call Hello World
-                function HelloWorld(){
-                    alert("Hello World");
-                    console.log("Hello World");
+                //
+                //Get values from the Page
+                //This is where it starts
+                function getValues(){
+                  //We need to get values from the page
+                  //generateNumbers
+                  // displayNumbers 
+                  let startValue = document.getElementById("startValue").value;
+                  let endValue = document.getElementById("endValue").value;
+                
+                  startValue = parseInt(startValue);
+                  endValue = parseInt(endValue);
+                  let numbers = generateNumbers(startValue, endValue);
+                  //alert("The Start Value:" + startValue);
+                };
+                
+                ///Generate number from startvalue to the endValue
+                //logic function
+                function generateNumbers(startValue, endValue)
+                {
+                let numbers =[];
+                
+                //We are going to get all the number rt to end
+                for(let index = startValue; index <=endValue; index++){
+                    numbers.push(index);
+                }
+                
+                return numbers;
+                };
+                
+                
+                //displastartVa numbers and mark even numbers bold
+                //display or view function
+                function displayNumbers(){
+                    
                 };
             </code>
             </pre>
